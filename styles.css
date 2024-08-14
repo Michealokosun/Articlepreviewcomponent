@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*{
+    margin:  0;
+    padding:  0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    font-family: "Manrope", sans-serif;
+    align-items: center;
+    background-color:hsl(210, 46%, 95%);
+}
+
+.container{
+    width: 100%;
+    max-width: 900px;
+    margin-inline:auto ;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    background-color: white;
+}
+
+.col1 {
+    background: url("./images//drawers.jpg") no-repeat;
+width: 150%;
+background-position: center;
+background-size: cover;
+
+
+}
+
+.col2{
+    padding: 50px;
+}
+
+.col2 h1{
+    font-size: 1.5em;
+    margin-bottom: 12px;
+    font-family: "Manrope", sans-serif;
+}
+
+.col2 p{
+    color: hsl(218, 15%, 40%);
+}
+
+.avatar{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.avatat-title{
+    flex: 1 1 1000px;
+    text-transform: capitalize;
+    font-size: .7rem;
+
+}
+
+.avatat-title p{
+    color: rgb(151, 151, 151);
+}
+
+
+.avatar_img img{
+    width: 80%;
+    border-radius: 100%;
+}
+
+
+
+
+.shart_btn img{
+    width: 300%;
+    cursor: pointer;
+}
+
+.social_icons{
+    position: absolute;
+    background-color: hsl(217, 19%, 35%);
+    display: flex;
+    right:-80px;
+    top: -40px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 9px 23px;
+    display: none;
+
+}
+
+.show{
+    display: flex;
+}
+
+.social_icons::after{
+    content: ""; 
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid hsl(217, 19%, 35%);
+}
+.social_icons p{
+    color: white ;
+    font-style: italic;
+    letter-spacing: 3px;
+    font-size: .9em;
+}
+.social_icons img{
+    width: 18px;
+    cursor: pointer;
+}
